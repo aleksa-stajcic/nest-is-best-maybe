@@ -4,4 +4,7 @@ RUN npm i -g @nestjs/cli
 
 WORKDIR /var/www
 
-ENTRYPOINT npm run start:dev
+RUN npm install
+
+RUN npm run start:dev
+
