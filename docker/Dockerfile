@@ -4,4 +4,4 @@ RUN npm i -g @nestjs/cli
 
 WORKDIR /var/www
 
-ENTRYPOINT sleep infinity
+ENTRYPOINT npm run start

@@ -6,5 +6,7 @@ services:
       context: ..
       dockerfile: ./docker/Dockerfile
     volumes:
-      - ../app:/var/www:cached
+      - ../nestker:/var/www:cached
+    ports:
+      - 3000:3000
 
