@@ -1,10 +1,10 @@
 FROM node:latest
 
-RUN npm i -g @nestjs/cli
-
 WORKDIR /var/www
+
+COPY ./nestker/package.json ./nestker/package-lock.json ./
 
 RUN npm install
 
-RUN npm run start:dev
+COPY ./nestker ./
 
